@@ -89,14 +89,14 @@ int main(int argc, char* argv[])
     {
 	
 	nbFrames++;
-	if ((nbFrames % 1000) == 0)
+	if ((nbFrames % 200) == 0)
 	{
 		ttmp = t1;
 		t2 = std::chrono::system_clock::now();
 		auto diff = std::chrono::duration_cast<std::chrono::seconds>(t2 - t1);
 		t1 = t2;
 		int secs = diff.count();
-		std::cout << " fps:" << std::to_string(1000/secs) << std::endl;
+		std::cout << " ******************fps:" << std::to_string(200/secs) << std::endl;
 
 	}
 	float imagex,imagey;
