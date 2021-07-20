@@ -70,7 +70,7 @@ int main(int argc, char* argv[])
 	return (-1);
     }
 
-    namedWindow("CSI Camera", WINDOW_AUTOSIZE);
+    namedWindow("Camera", WINDOW_AUTOSIZE);
     Mat img;
     Mat coordImg;
 
